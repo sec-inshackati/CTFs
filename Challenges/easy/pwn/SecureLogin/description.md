@@ -1,8 +1,16 @@
-##Find the link (Easy)
+## Secure Login (Easy - Pwn)
 
-####Try to find the correct link.
 
-###Compile
+
+### Description
+
+I found this portal on internet...
+
+It seems that it will give you a flag only if you are an Admin.
+
+How can you bypass authentication?
+
+### Compile
 
 ```
 chmod +x compile.sh
@@ -11,9 +19,9 @@ chmod +x compile.sh
 
 ### Execute
 ```
-chmod +x dist/FindTheLink
+chmod +x dist/SecureLogin
 cd dist
-./FindTheLink
+./SecureLogin
 ```
 
 # Copyright
