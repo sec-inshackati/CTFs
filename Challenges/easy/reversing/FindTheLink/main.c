@@ -16,7 +16,6 @@ int check_password(char* password)
     if ( strlen(password) != 29 ) return WRONG_PASSWORD_1;
     printf("Check 1 PASSED.\n");
 
-    // Check for same 't'
     if(
       password[1] != password[2] ||
       password[1] != password[10] ||
@@ -89,7 +88,6 @@ void format_flag(char* password)
         continue;
       }
 
-      if( password[i] == 'a' ) { password[i] = '4'; continue; }
       if( password[i] == 'a' ) { password[i] = '4'; continue; }
       if( password[i] == 'e' ) { password[i] = '3'; continue; }
       if( password[i] == 'i' ) { password[i] = '1'; continue; }
