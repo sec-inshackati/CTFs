@@ -1,8 +1,12 @@
-##Find the link (Easy)
+## Find the link (Easy - Reversing)
 
-####Try to find the correct link.
+### Description
 
-###Compile
+Oh my God. This is driving me crazy.
+
+I think that there's a way to discover the algorithm behind the link check... but HOW?
+
+### Compile
 
 ```
 chmod +x compile.sh
