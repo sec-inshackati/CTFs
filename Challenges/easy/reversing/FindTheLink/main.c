@@ -9,29 +9,8 @@
 
 #define CORRECT_PASSWORD  0xcafebabe // 10 //
 
-// void print_decrypted(char* url)
-// {
-//   BYTE x1;
-//   BYTE x2;
-//
-//   // printf("Initial: %c%c ", url[0], url[1] );
-//
-//   x1 = url[0] ^ 0xde;
-//   x2 = url[1] ^ 0xad;
-//   x1 ^= 0xbe;
-//   x2 ^= 0xef;
-//
-//   printf("char url_1[] = \"\\x%2.2x", x1);
-//   printf("\\x%2.2x\";\n", x2);
-//
-// }
-
 int check_password(char* password)
 {
-    // char url[] = "https://github.com/inshackati";
-    //               0         1         2
-    //               01234567890123456789012345678
-
     printf("Checking password...\n");
 
     if ( strlen(password) != 29 ) return WRONG_PASSWORD_1;
@@ -47,7 +26,6 @@ int check_password(char* password)
 
     printf("Check 2 PASSED.\n");
 
-    // Check for same 'h' and ':'
     if(
       password[0] != password[11] ||
       password[5] != ':' ||
@@ -57,8 +35,6 @@ int check_password(char* password)
 
     printf("Check 3 PASSED.\n");
 
-    // ps://
-    // 34567
     if(
       password[4] - password[3] != 3 ||
       password[6] != password[7] ||
@@ -70,7 +46,6 @@ int check_password(char* password)
 
     if(
       password[8] != 'g' ||
-      // password[9] ^ 0xcc != 0xa5 ||
       password[10] != password[11] + 12 ||
       password[11] != 'h' ||
       password[12] != 'u' ||
