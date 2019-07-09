@@ -29,7 +29,7 @@ void print_flag()
   // asm("  sub r15, 2 ; ");
   // asm("  sub r15, 3 ; ");
 
-  asm("  mov  BYTE PTR [r15], r14b ; ");   //        # 0x6070a0 <key>
+  asm("  mov  BYTE PTR [r15], r14b ; ");       //        # 0x6070a0 <key>
   asm("  shr r14, 8; ");
   asm("  mov  BYTE PTR [r15 + 1], r14b ; ");   //        # 0x6070a1 <key+1>
   asm("  shr r14, 8; ");
@@ -99,15 +99,15 @@ int main(int argc, char** argv)
 
   password[ read(0, password, 10) ] = '\0';
 
+
+  printf("Current status:   %d ", is_guest);
+  if (is_guest)
+    printf("(GUEST)\n");
+  else
+    printf("(ADMIN)\n");
+
   if( is_guest == 0 )
   {
-
-    printf("Current status:   %d ", is_guest);
-    if (is_guest)
-      printf("(GUEST)\n");
-    else
-      printf("(ADMIN)\n");
-
     printf("\nYou are admin. Here you are the flag.\n");
     asm( "mov r14, 0x80cb6a9421fe9029;" );
     asm( "mov r15, 0x12abc22;" );

@@ -1,13 +1,13 @@
 #define BYTE char
 
-#define WRONG_PASSWORD_1      0x8ed12e17  // 1 //
-#define WRONG_PASSWORD_2      0x4fd3cde5  // 2 //
-#define WRONG_PASSWORD_3      0x9b895c46  // 3 //
-#define WRONG_PASSWORD_4      0x6062da3e  // 4 //
-#define WRONG_PASSWORD_5      0xf5ae2c9d  // 5 //
-#define WRONG_PASSWORD_6      0x38e701bf  // 6 //
+#define WRONG_PASSWORD_1      0x8ed12e17
+#define WRONG_PASSWORD_2      0x4fd3cde5
+#define WRONG_PASSWORD_3      0x9b895c46
+#define WRONG_PASSWORD_4      0x6062da3e
+#define WRONG_PASSWORD_5      0xf5ae2c9d
+#define WRONG_PASSWORD_6      0x38e701bf
 
-#define CORRECT_PASSWORD  0xcafebabe // 10 //
+#define CORRECT_PASSWORD  0xcafebabe
 
 int check_password(char* password)
 {
