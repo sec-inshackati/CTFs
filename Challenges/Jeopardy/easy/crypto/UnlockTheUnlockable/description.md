@@ -9,18 +9,20 @@ How can i find the key?
 
 ### Compile
 
-```
+```bash
 chmod +x compile.sh
 ./compile.sh
 ```
 
 ### Execute
-```
+```bash
 cd dist
 chmod +x run.sh
 ./run.sh
 ```
 
-#### Hint
+---
 
-However DEBUG features must be disabled in production...
+#### Hints
+
+* DEBUG features must be disabled in production...
