@@ -71,7 +71,7 @@ void print_flag()
 
   printf(" FLAG: %s\n", flag_encrypted);
 
-  exit(0);
+  fflush(stdout);
 
 }
 
